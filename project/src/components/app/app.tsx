@@ -1,8 +1,5 @@
 import MainPage from '../main-page/main-page';
-
-type AppScreenProps = {
-  offersCount: number;
-}
+import { AppScreenProps } from './types';
 
 function App({offersCount}: AppScreenProps): JSX.Element {
   return <MainPage offersCount={offersCount}/>;

@@ -1,8 +1,5 @@
-import OffersCards from '../offersCards';
-
-type MainPageProps = {
-  offersCount: number | string | JSX.Element;
-}
+import OffersCards from '../offer-cards';
+import { MainPageProps } from './types';
 
 function getOffersCount(count: number): JSX.Element[] {
   const offers: JSX.Element[] = [];
