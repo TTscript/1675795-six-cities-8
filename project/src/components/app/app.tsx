@@ -1,12 +1,12 @@
-import MainPage from '../main-page/main-page';
-import LoginPage from '../login-page/login-page';
-import FavoritesPage from '../favorites-page/favorites-page';
-import RoomPage from '../room-page/room-page';
-import Page404 from '../page-404/page-404';
-import { AppScreenProps } from './types';
 import { Switch, Route, BrowserRouter} from 'react-router-dom';
+import { AppScreenProps } from './types';
 import { AppRoute, AuthorizationStatus } from '../../const';
+import FavoritesPage from '../favorites-page/favorites-page';
+import LoginPage from '../login-page/login-page';
+import MainPage from '../main-page/main-page';
+import Page404 from '../page-404/page-404';
 import PrivateRoute from '../private-route/private-route';
+import RoomPage from '../room-page/room-page';
 
 function App({offersCount}: AppScreenProps): JSX.Element {
   return (
