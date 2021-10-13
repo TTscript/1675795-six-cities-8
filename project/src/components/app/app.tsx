@@ -8,13 +8,14 @@ import Page404 from '../page-404/page-404';
 import PrivateRoute from '../private-route/private-route';
 import RoomPage from '../room-page/room-page';
 
-function App({offersCount}: AppScreenProps): JSX.Element {
+function App({offersCount, offers, reviews}: AppScreenProps): JSX.Element {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path={AppRoute.Main}>
           <MainPage
             offersCount={offersCount}
+            offers={offers}
           />
         </Route>
         <Route exact path={AppRoute.SignIn}>
@@ -23,8 +24,8 @@ function App({offersCount}: AppScreenProps): JSX.Element {
         <PrivateRoute
           exact
           path={AppRoute.Favorites}
-          render={() => <FavoritesPage />}
-          authorizationStatus={AuthorizationStatus.NoAuth}
+          render={() => <FavoritesPage offers={offers}/>}
+          authorizationStatus={AuthorizationStatus.Auth}
         >
         </PrivateRoute>
         <Route exact path={AppRoute.Room}>

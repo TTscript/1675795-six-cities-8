@@ -1,18 +1,8 @@
-import OffersCards from '../offer-cards';
+import MainOffersList from '../main-offers-list/main-offers-list';
 import { MainPageProps } from './types';
 import Logo from '../logo/logo';
 
-function getOffersCount(count: number): JSX.Element[] {
-  const offers: JSX.Element[] = [];
-
-  for (let i = 0; i < count; i++) {
-    offers.push(<OffersCards key={i}/>);
-  }
-
-  return offers;
-}
-
-function MainPage({offersCount}: MainPageProps): JSX.Element {
+function MainPage({offersCount, offers}: MainPageProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <header className="header">
@@ -99,9 +89,7 @@ function MainPage({offersCount}: MainPageProps): JSX.Element {
                   <li className="places__option" tabIndex={0}>Top rated first</li>
                 </ul>
               </form>
-              <div className="cities__places-list places__list tabs__content">
-                {getOffersCount(+offersCount)}
-              </div>
+              <MainOffersList offersCount={offersCount} offers={offers}/>
             </section>
             <div className="cities__right-section">
               <section className="cities__map map"></section>
