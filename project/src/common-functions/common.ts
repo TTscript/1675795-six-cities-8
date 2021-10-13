@@ -1,5 +1,1 @@
-export function countWidthPercent(number:number): string {
-  return `${number / 5 * 100}%`;
-}
-
-
+export const countWidthPercent = (number:number): string => `${number / 5 * 100}%`;

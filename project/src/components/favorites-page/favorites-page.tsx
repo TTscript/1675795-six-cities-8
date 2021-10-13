@@ -1,10 +1,6 @@
 import Logo from '../logo/logo';
 import FavoritesListElements from '../favorite-list-elements/favorite-list-elements';
-import { Offers } from '../../mocks/types';
-
-type FavoritesOffers = {
-  offers: Offers;
-}
+import { FavoritesOffers } from './types';
 
 function FavoritesPage({offers}: FavoritesOffers): JSX.Element {
   return (

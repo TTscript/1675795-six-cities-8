@@ -9,7 +9,6 @@ function getOffersCount(count: number): JSX.Element[] {
   for (let i = 0; i < count; i++) {
     rentOffersBlock.push(<OffersCards reviews={reviews} offersCount={1} offers={mockMainOffers} key={i} />);
   }
-  //cant understand what's going on in the cycle
 
   return rentOffersBlock;
 }

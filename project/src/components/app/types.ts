@@ -1,4 +1,6 @@
-import { Offers, Reviews } from '../../mocks/types';
+import { Offers } from '../../mocks/types';
+import { Reviews } from '../../mocks/types';
+
 
 type AppScreenProps = {
   offersCount: number;

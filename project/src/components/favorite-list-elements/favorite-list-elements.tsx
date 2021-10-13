@@ -1,13 +1,9 @@
 import { Link } from 'react-router-dom';
 import { countWidthPercent } from '../../common-functions/common';
 import { AppRoute } from '../../const';
-import { Offers } from '../../mocks/types';
+import { FavoritesOffers } from '../favorites-page/types';
 
-type FavotitesOffers = {
-  offers: Offers;
-}
-
-function FavoritesListElements({offers}: FavotitesOffers): JSX.Element {
+function FavoritesListElements({offers}: FavoritesOffers): JSX.Element {
   const { city, title, price, rating, type, previewImage } = offers[0];
 
   return (
