@@ -1,6 +1,6 @@
 import Logo from '../logo/logo';
-import FavoritesListElements from '../favorite-list-elements/favorite-list-elements';
 import { FavoritesOffers } from '../../types/types';
+import FavoritesListElements from '../favorite-list-elements/favorite-list-elements';
 
 function FavoritesPage({offers}: FavoritesOffers): JSX.Element {
   return (
