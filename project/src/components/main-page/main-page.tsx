@@ -1,5 +1,5 @@
-import MainOffersList from '../main-offers-list/main-offers-list';
 import { MainPageProps } from '../../types/types';
+import MainOffersList from '../main-offers-list/main-offers-list';
 import Logo from '../logo/logo';
 import Map from '../map/map';
 

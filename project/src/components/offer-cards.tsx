@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { countWidthPercent } from '../common-functions/common';
 import { AppScreenProps } from '../types/types';
+import { countWidthPercent } from '../common-functions/common';
 import { AppRoute } from '../const';
 
 function OffersCards({offers, city}: AppScreenProps): JSX.Element {

@@ -1,10 +1,9 @@
-
 import {useRef, useEffect} from 'react';
-import {Icon, Marker} from 'leaflet';
 import useMap from '../../hooks/useMap';
-import {URL_MARKER_DEFAULT, URL_MARKER_CURRENT} from '../../const';
+import {Icon, Marker} from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { MapProps } from '../../types/types';
+import {URL_MARKER_DEFAULT, URL_MARKER_CURRENT} from '../../const';
 
 const defaultCustomIcon = new Icon({
   iconUrl: URL_MARKER_DEFAULT,

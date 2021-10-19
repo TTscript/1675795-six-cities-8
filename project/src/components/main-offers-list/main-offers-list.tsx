@@ -1,7 +1,7 @@
+import { MainPageProps } from '../../types/types';
 import OffersCards from '../offer-cards';
 import { mockMainOffers } from '../../mocks/mock-main-offers';
 import { reviews } from '../../mocks/reviews';
-import { MainPageProps } from '../../types/types';
 import { POINTS } from '../../mocks/points';
 import { CITY } from '../../mocks/city';
 

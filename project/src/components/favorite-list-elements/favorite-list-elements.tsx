@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
+import { FavoritesOffers } from '../../types/types';
 import { countWidthPercent } from '../../common-functions/common';
 import { AppRoute } from '../../const';
-import { FavoritesOffers } from '../../types/types';
 
 function FavoritesListElements({offers}: FavoritesOffers): JSX.Element {
   const { city, title, price, rating, type, previewImage } = offers[0];

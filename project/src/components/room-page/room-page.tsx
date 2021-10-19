@@ -1,7 +1,7 @@
+import { RoomPageProps } from '../../types/types';
 import Logo from '../logo/logo';
 import RoomPageForm from '../room-page-form/room-page-form';
 import RoomPageReviewsList from '../room-page-reviews-list/room-page-reviews-list';
-import { RoomPageProps } from '../../types/types';
 import Map from '../map/map';
 import MainOffersList from '../main-offers-list/main-offers-list';
 
