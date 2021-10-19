@@ -2,8 +2,8 @@ import { RouteProps } from 'react-router-dom';
 import { AuthorizationStatus } from '../const';
 
 export type PrivateRouteProps = RouteProps & {
-  render: () => JSX.Element;
-  authorizationStatus: AuthorizationStatus;
+  render: () => JSX.Element,
+  authorizationStatus: AuthorizationStatus,
 }
 
 export type cityInfo = {
@@ -74,10 +74,10 @@ export type Point = {
 export type Points = Point[];
 
 export type City = {
-  title: string;
-  lat: number;
-  lng: number;
-  zoom: number;
+  title: string,
+  lat: number,
+  lng: number,
+  zoom: number,
 };
 
 export type MainPageProps = {
@@ -86,7 +86,7 @@ export type MainPageProps = {
   city: City,
   points: Points,
   onListItemHover: (listItemName: string) => void,
-  selectedPoint: Point | undefined;
+  selectedPoint: Point | null;
 }
 
 export type AppScreenProps = {
@@ -98,5 +98,5 @@ export type AppScreenProps = {
 }
 
 export type FavoritesOffers = {
-  offers: Offers;
+  offers: Offers,
 }
