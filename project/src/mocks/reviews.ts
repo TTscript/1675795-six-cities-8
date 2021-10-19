@@ -1,5 +1,5 @@
-import { Reviews } from './types';
 import { nanoid } from '@reduxjs/toolkit';
+import { Reviews } from '../types/types';
 
 export const reviews: Reviews  = {
   comment: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.',

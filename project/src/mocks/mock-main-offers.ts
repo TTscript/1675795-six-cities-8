@@ -1,13 +1,13 @@
-import { Offers } from './types';
 import { nanoid } from '@reduxjs/toolkit';
+import { Offers } from '../types/types';
 
 export const mockMainOffers: Offers = [
   {
     bedrooms: 3,
     city: {
       location: {
-        latitude: 52.370216,
-        longitude: 4.895168,
+        lat: 52.377956,
+        lng: 4.897070,
         zoom: 10,
       },
       name: 'Amsterdam',
@@ -25,8 +25,8 @@ export const mockMainOffers: Offers = [
     isFavorite: false,
     isPremium: true,
     location: {
-      latitude: 52.35514938496378,
-      longitude: 4.673877537499948,
+      lat: 52.35514938496378,
+      lng: 4.673877537499948,
       zoom: 8,
     },
     maxAdults: 4,
@@ -40,8 +40,8 @@ export const mockMainOffers: Offers = [
     bedrooms: 3,
     city: {
       location: {
-        latitude: 52.370216,
-        longitude: 4.895168,
+        lat: 52.377956,
+        lng: 4.897070,
         zoom: 10,
       },
       name: 'Amsterdam',
@@ -59,8 +59,8 @@ export const mockMainOffers: Offers = [
     isFavorite: false,
     isPremium: true,
     location: {
-      latitude: 52.35514938496378,
-      longitude: 4.673877537499948,
+      lat: 52.35514938496378,
+      lng: 4.673877537499948,
       zoom: 8,
     },
     maxAdults: 4,
@@ -74,8 +74,8 @@ export const mockMainOffers: Offers = [
     bedrooms: 3,
     city: {
       location: {
-        latitude: 52.370216,
-        longitude: 4.895168,
+        lat: 52.377956,
+        lng: 4.897070,
         zoom: 10,
       },
       name: 'Amsterdam',
@@ -93,8 +93,8 @@ export const mockMainOffers: Offers = [
     isFavorite: false,
     isPremium: true,
     location: {
-      latitude: 52.35514938496378,
-      longitude: 4.673877537499948,
+      lat: 52.35514938496378,
+      lng: 4.673877537499948,
       zoom: 8,
     },
     maxAdults: 4,
@@ -108,8 +108,8 @@ export const mockMainOffers: Offers = [
     bedrooms: 3,
     city: {
       location: {
-        latitude: 52.370216,
-        longitude: 4.895168,
+        lat: 52.377956,
+        lng: 4.897070,
         zoom: 10,
       },
       name: 'Amsterdam',
@@ -127,8 +127,8 @@ export const mockMainOffers: Offers = [
     isFavorite: false,
     isPremium: true,
     location: {
-      latitude: 52.35514938496378,
-      longitude: 4.673877537499948,
+      lat: 52.35514938496378,
+      lng: 4.673877537499948,
       zoom: 8,
     },
     maxAdults: 4,
