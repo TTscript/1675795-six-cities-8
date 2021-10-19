@@ -3,7 +3,7 @@ import { MainPageProps } from '../../types/types';
 import Logo from '../logo/logo';
 import Map from '../map/map';
 
-function MainPage({offersCount, offers, city, points, selectedPoint, onListItemHover}: MainPageProps): JSX.Element {
+function MainPage({offersCount, offers, city, points, selectedPoint, onListItemHover, height, width}: MainPageProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <header className="header">
@@ -90,12 +90,12 @@ function MainPage({offersCount, offers, city, points, selectedPoint, onListItemH
                   <li className="places__option" tabIndex={0}>Top rated first</li>
                 </ul>
               </form>
-              <MainOffersList offersCount={offersCount} offers={offers} city={city} points={points} onListItemHover={onListItemHover} selectedPoint={selectedPoint} />
+              <MainOffersList offersCount={offersCount} offers={offers} city={city} points={points} onListItemHover={onListItemHover} selectedPoint={selectedPoint} height={height} width={width}/>
 
             </section>
             <div className="cities__right-section">
               <section className="cities__map map">
-                <Map city={city} points={points} selectedPoint={selectedPoint} />
+                <Map city={city} points={points} selectedPoint={selectedPoint} height={height} width={width}/>
               </section>
             </div>
           </div>

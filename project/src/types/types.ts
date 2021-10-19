@@ -56,7 +56,6 @@ export type User = {
   name: string,
 }
 
-
 export type Reviews = {
   comment: string,
   date: string,
@@ -80,7 +79,7 @@ export type City = {
   zoom: number,
 };
 
-export type MainPageProps = {
+export type MainPageProps = MapSize & {
   offersCount: number | string | JSX.Element,
   offers: Offers,
   city: City,
@@ -100,3 +99,16 @@ export type AppScreenProps = {
 export type FavoritesOffers = {
   offers: Offers,
 }
+
+export type MapSize = {
+  height: string,
+  width: string,
+}
+
+export type MapProps = MapSize & {
+  city: City,
+  points: Points,
+  selectedPoint: Point | null,
+}
+
+export type RoomPageProps = MainPageProps & MapSize;
