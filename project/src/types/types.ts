@@ -1,5 +1,6 @@
 import { RouteProps } from 'react-router-dom';
 import { AuthorizationStatus } from '../const';
+import { changeMainListElement } from '../store/action';
 
 export type PrivateRouteProps = RouteProps & {
   render: () => JSX.Element,
@@ -85,7 +86,8 @@ export type MainPageProps = MapSize & {
   city: City,
   points: Points,
   onListItemHover: (listItemName: string) => void,
-  selectedPoint: Point | null;
+  selectedPoint: Point | null,
+  onChangeMainListElement: typeof changeMainListElement,
 }
 
 export type AppScreenProps = {

@@ -17,7 +17,7 @@ export const URL_MARKER_CURRENT = 'https://assets.htmlacademy.ru/content/intensi
 
 export const MainMapSize = {
   heigth: '700px',
-  width: '550px',
+  width: '520px',
 };
 
 export const RoomMapSize = {

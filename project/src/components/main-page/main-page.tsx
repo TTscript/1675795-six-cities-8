@@ -2,8 +2,11 @@ import { MainPageProps } from '../../types/types';
 import MainOffersList from '../main-offers-list/main-offers-list';
 import Logo from '../logo/logo';
 import Map from '../map/map';
+import CitiesList from '../citiesList/cities-list';
+import { changeMainListElement } from '../../store/action';
 
-function MainPage({offersCount, offers, city, points, selectedPoint, onListItemHover, height, width}: MainPageProps): JSX.Element {
+
+function MainPage({offersCount, offers, city, points, selectedPoint, onListItemHover, height, width, onChangeMainListElement}: MainPageProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <header className="header">
@@ -36,38 +39,7 @@ function MainPage({offersCount, offers, city, points, selectedPoint, onListItemH
         <h1 className="visually-hidden">Cities</h1>
         <div className="tabs">
           <section className="locations container">
-            <ul className="locations__list tabs__list">
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href=" ">
-                  <span>Paris</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href=" ">
-                  <span>Cologne</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href=" ">
-                  <span>Brussels</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item tabs__item--active" href=" ">
-                  <span>Amsterdam</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href=" ">
-                  <span>Hamburg</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href=" ">
-                  <span>Dusseldorf</span>
-                </a>
-              </li>
-            </ul>
+            <CitiesList onChangeMainListElement={changeMainListElement}/>
           </section>
         </div>
         <div className="cities">
@@ -90,7 +62,7 @@ function MainPage({offersCount, offers, city, points, selectedPoint, onListItemH
                   <li className="places__option" tabIndex={0}>Top rated first</li>
                 </ul>
               </form>
-              <MainOffersList offersCount={offersCount} offers={offers} city={city} points={points} onListItemHover={onListItemHover} selectedPoint={selectedPoint} height={height} width={width}/>
+              <MainOffersList onChangeMainListElement={changeMainListElement} offersCount={offersCount} offers={offers} city={city} points={points} onListItemHover={onListItemHover} selectedPoint={selectedPoint} height={height} width={width}/>
 
             </section>
             <div className="cities__right-section">
